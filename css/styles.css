@@ -44,7 +44,7 @@ body {
 .button:hover {
   cursor: pointer;
 }
-/* Шапка */
+/* --------------------Шапка-------------------- */
 header {
   border-bottom: 1px solid #ececec;
 }
@@ -112,21 +112,19 @@ header {
 .tel::before {
   content: "";
   display: inline-block;
+  margin-right: 10px;
 }
 .mail::before {
-  margin-right: 10px;
   width: 16px;
   height: 12px;
   background-image: url(../images/envelope.svg);
 }
 .tel::before {
-  margin-right: 10px;
   width: 10px;
   height: 16px;
-  background-position: center;
   background-image: url(../images/smartphone.svg);
 }
-/* Банер */
+/* --------------------Банер-------------------- */
 .overlay {
   max-width: 1600px;
   height: 600px;
@@ -176,7 +174,7 @@ header {
   background-color: var(--white-color);
   border-color: var(--accent-color);
 }
-/* Особенности */
+/* --------------------Особенности-------------------- */
 .features {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -237,7 +235,7 @@ header {
 .astronaut::before {
   background-image: url(../images/astronaut.svg);
 }
-/* Чем мы занимаемся */
+/* --------------------Чем мы занимаемся-------------------- */
 .doing {
   padding-top: 0;
   padding-bottom: 94px;
@@ -261,7 +259,7 @@ header {
   font-weight: 700;
   color: var(--title-text-color);
 }
-/* Наша команда */
+/* --------------------Наша команда-------------------- */
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -270,6 +268,11 @@ header {
 }
 .team-list {
   display: flex;
+  margin-left: calc(-1 * var(--card-gap));
+}
+.team-item {
+  flex-basis: calc(100% / 4 - var(--card-gap));
+  max-width: 270px;
 }
 .team li + li {
   margin-left: 30px;
@@ -299,10 +302,67 @@ header {
   text-align: center;
   color: var(--primary-text-color);
 }
+.social-list,
+.p-social-list {
+  display: flex;
+}
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+.instagram::before,
+.twitter::before,
+.facebook::before,
+.linkedin::before,
+.p-instagram::before,
+.p-twitter::before,
+.p-facebook::before,
+.p-linkedin::before {
+  content: "";
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.p-social-list {
+  margin: 16px 32px 30px 32px;
+}
+.p-instagram::before {
+  background-image: url(../images/instagram.svg);
+}
+.p-twitter::before {
+  background-image: url(../images/twitter.svg);
+}
+.p-facebook::before {
+  background-image: url(../images/facebook.svg);
+}
+.p-linkedin::before {
+  background-image: url(../images/linkedin.svg);
+}
+/* --------------------Клиенты-------------------- */
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-list {
+  display: flex;
+  margin-left: calc(-1 * var(--card-gap));
+}
+.client-item {
+  flex-basis: calc(100% / 6 - var(--card-gap));
+  max-width: 270px;
+}
+.clients-list li + li {
+  margin-left: 30px;
+}
+
+/* --------------------Футер-------------------- */
 footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--footer-background-color);
+}
+.footer {
+  display: flex;
 }
 .logo.white {
   color: var(--white-color);
@@ -331,6 +391,32 @@ footer {
 .contacts-item:focus {
   color: var(--accent-color);
 }
+.join {
+  padding: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.social {
+  margin-left: 70px;
+}
+.instagram::before {
+  background-image: url(../images/instagram1.svg);
+}
+.twitter::before {
+  background-image: url(../images/twitter1.svg);
+}
+.facebook::before {
+  background-image: url(../images/facebook1.svg);
+}
+.linkedin::before {
+  background-image: url(../images/linkedin1.svg);
+}
+
+/* --------------------Портфолио-------------------- */
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
