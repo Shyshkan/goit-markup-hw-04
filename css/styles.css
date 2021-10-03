@@ -105,6 +105,10 @@ header {
   color: var(--primary-text-color);
   display: flex;
   align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .mail-tel-item + .mail-tel-item {
   margin-left: 50px;
@@ -257,6 +261,7 @@ header {
 .team-item {
   flex-basis: calc(100% / 4 - var(--card-gap));
   max-width: 270px;
+  padding-bottom: 32px;
 }
 .team-item + .team-item {
   margin-left: 30px;
@@ -268,11 +273,10 @@ header {
   border-radius: 0px 0px 4px 4px;
 }
 .team-item-text {
-  padding: 30px 0;
+  margin-top: 30px;
 }
 .team-name {
-  margin-top: 0;
-  margin-bottom: 10px;
+  margin: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19em;
@@ -281,7 +285,8 @@ header {
   color: var(--title-text-color);
 }
 .team-position {
-  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 0;
   line-height: 1.14em;
   text-align: center;
   color: var(--primary-text-color);
@@ -304,14 +309,15 @@ header {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  fill: var(--primary-text-color);
+  fill: var(--icon-color);
 }
 .p-linkedin::hover,
 .p-linkedin::focus {
   background-color: var(--accent-color);
 }
 .p-social-list {
-  margin: 16px 32px 30px 32px;
+  justify-content: center;
+  margin-top: 16px;
 }
 .p-linkedin:hover,
 .p-facebook:hover,
