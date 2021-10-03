@@ -136,6 +136,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-color: var(--hero-background-color);
 }
 .hero {
   padding-top: 200px;
